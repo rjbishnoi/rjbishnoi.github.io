@@ -1,22 +1,51 @@
 title: Ram J Bishnoi, MD MBA
-theme: jekyll-theme-dinky
 
 
-author: "Ram J Bishnoi"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-mathjax: true
-show_excerpts: false
-show_frame: true
+baseurl: '/'
+permalink: pretty
+
+
+
+
+home: 
+  limit_services: 6
+
+collections:
+  services:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
 
 plugins:
- - jekyll-feed
+  - jekyll-environment-variables
 
-navigation:
-  - {title: Mail, icon: envelope, url: "mailto:rjbishnoi@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/rjbishnoi/"}
-  - {title: Feed, icon: rss, url: "/feed.xml"}
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
 
 
 
