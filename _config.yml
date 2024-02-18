@@ -10,10 +10,7 @@ mathjax: true
 show_excerpts: false
 show_frame: true
 
-navigation:
-  - {title: Mail, icon: envelope, url: "mailto:rjbishnoi@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/rjbishnoi/"}
-  - {title: Feed, icon: rss, url: "/feed.xml"}
+
 
 remote_theme: rjbishnoi/contrast
 
