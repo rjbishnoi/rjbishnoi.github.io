@@ -1,6 +1,6 @@
 title: Ram J Bishnoi, MD MBA
 theme: jekyll-theme-minimal
-description: Bookmark this to keep an eye on my project updates!
+
 
 author: "Ram J Bishnoi"
 permalink: /:title/
@@ -13,7 +13,10 @@ show_frame: true
 plugins:
  - jekyll-feed
 
-
+navigation:
+  - {title: Mail, icon: envelope, url: "mailto:rjbishnoi@users.noreply.github.com"}
+  - {title: Github, icon: github, url: "https://github.com/rjbishnoi/"}
+  - {title: Feed, icon: rss, url: "/feed.xml"}
 
 
 
