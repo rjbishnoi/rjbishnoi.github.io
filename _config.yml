@@ -10,7 +10,8 @@ mathjax: true
 show_excerpts: false
 show_frame: true
 
-remote_theme: rjbishnoi/contrast
+plugins:
+ - jekyll-feed
 
 
 
